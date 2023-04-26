@@ -12,7 +12,7 @@ document.addEventListener("click",(event)=>{
             if(index===arreglo.length){
                clearInterval(intervalo);
                //O numero aleatorio e gerado
-let numero_rifa=1+Math.round(Math.random()*50);
+let numero_rifa=1+Math.round(Math.random()*49);
 $texto.innerHTML=numero_rifa;
 
 //Imprimo na tela o numero e o ganhador
