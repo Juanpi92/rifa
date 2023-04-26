@@ -1,0 +1,62 @@
+
+:root {
+    --main_color: #f7df1e;
+    --second_color: #222;
+    --main_modal_color: #f7df1ed9;
+    --second_modal_color: #222222d9;
+  }
+
+body {
+    background: -webkit-linear-gradient(top, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)),
+      url("./cesta.webp");
+    background: -o-linear-gradient(top, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)),
+      url("./cesta.webp");
+    background: -moz-linear-gradient(top, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)),
+      url("./cesta.webp");
+    background: linear-gradient(top, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.8)),
+      url("./cesta.webp");
+    height: 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.center{
+    border: 1px solid red;
+    width: 250px;
+    height: 280px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#boton_traducir {
+    background-color: var(--main_color);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px 80px;
+    cursor: pointer;
+  }
+  #boton_traducir:hover {
+    background-color: var(--main_modal_color);
+    opacity: 0.9;
+  }
+
+.numero{
+    padding: 0px;
+    font-size: 150px;
+    width: 250px;
+    height: 200px;
+    text-align: center;  
+    color: whitesmoke;
+}
+.nome{
+    padding: 10px;
+    margin: 30px auto;
+    font-size: 40px;
+    text-align: center;  
+    color: whitesmoke;   
+}

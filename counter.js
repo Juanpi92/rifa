@@ -1,0 +1,27 @@
+import { participantes } from "./participantes.js";
+
+const $texto = document.querySelector(".numero");
+const $nome = document.querySelector(".nome");
+document.addEventListener("click",(event)=>{
+    let arreglo=[1,4,5,34,23,45,21,33,52,31,9,45,23,16,43,26,28,42,7];
+    let index=0;
+    if(event.target.matches("#boton_traducir")){
+       const intervalo=setInterval(() => {
+            $texto.innerHTML=arreglo[index];
+            index++;   
+            if(index===arreglo.length){
+               clearInterval(intervalo);
+               //O numero aleatorio e gerado
+let numero_rifa=1+Math.round(Math.random()*50);
+$texto.innerHTML=numero_rifa;
+
+//Imprimo na tela o numero e o ganhador
+if(participantes[numero_rifa]===""){
+    $nome.innerHTML="O numero "+numero_rifa+" não foi comprado";
+}else{
+    $nome.innerHTML="Parabéns: "+participantes[numero_rifa];
+}
+     }          
+   }, 100); 
+    }
+})
