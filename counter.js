@@ -16,11 +16,9 @@ let numero_rifa=1+Math.round(Math.random()*49);
 $texto.innerHTML=numero_rifa;
 
 //Imprimo na tela o numero e o ganhador
-if(participantes[numero_rifa]===""){
-    $nome.innerHTML="O numero "+numero_rifa+" não foi comprado";
-}else{
-    $nome.innerHTML="Parabéns: "+participantes[numero_rifa];
-}
+
+    $nome.innerHTML="Parabéns ao comprador do numero: "+numero_rifa;
+
      }          
    }, 100); 
     }
